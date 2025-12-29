@@ -12,7 +12,7 @@
 
 body {
     font-family:'Ubuntu', sans-serif;
-    background: linear-gradient(45deg, #000000 0%, #000000 50%, #2833d3 100%);
+    background: linear-gradient(45deg, #000000 0%, #000000 50%, #0125DC 100%);
     background-size: 200% 200%;
     animation: fluctuate 12s ease-in-out infinite;
     margin: 0;
@@ -36,13 +36,11 @@ body {
 
 .top-logo {
     height: 80px;
-    flex-shrink: 0;
 }
 
 .center-logo{
     height: 50px;
     margin-top: 20px;
-    flex-shrink: 0;
 }
 
 .middle {
@@ -58,15 +56,16 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-bottom: 100px
 }
 
 .soon-text {
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     font-weight:500;
-    color: #5468E9;
+    color: #2846DB;
     text-align: center;
-    animation: fadeLoop 1.2s ease-in-out infinite;
+    animation: fadeLoop 1.9s ease-in-out infinite;
 }
 
 @keyframes fadeLoop {
@@ -75,10 +74,30 @@ body {
     100% { opacity: 0; }
 }
 
-.logo-container {
-    width: 150px;
+.sticker-container {
+    position: relative;
+    width: 600px;  
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible; 
 }
 
-.main-logo{
-    width: 300px;
+.sticker {
+    position: absolute;
+    width: 250px;
+    opacity: 0;
+    
+    transform: translate(var(--x), var(--y)) rotate(var(--r));
+    
+    transition: opacity 0.8s ease-in-out;
+    
+    user-select: none;
+    pointer-events: none; 
+}
+
+.sticker.visible {
+    opacity: 1;
+    transform: translate(var(--x), var(--y)) rotate(var(--r));
 }
