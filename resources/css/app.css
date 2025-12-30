@@ -16,6 +16,7 @@ body {
     background-size: 200% 200%;
     animation: fluctuate 12s ease-in-out infinite;
     margin: 0;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@ body {
 
 .soon-text {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-size: clamp(18px, 0px + 5vw, 30px);
     font-weight:500;
     color: #2846DB;
     text-align: center;
@@ -100,4 +101,37 @@ body {
 .sticker.visible {
     opacity: 1;
     transform: translate(var(--x), var(--y)) rotate(var(--r));
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+        padding: 15px 10px;
+    }
+    
+    .top-logo {
+        height: 50px;
+    }
+    
+    .center-logo {
+        height: 35px;
+        margin-top: 10px;
+    }
+    
+    .sticker-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .sticker {
+        width: 140px;
+    }
+    
+    .middle {
+        margin-bottom: 50px;
+    }
+    
+    .center-content {
+        margin-bottom: 50px;
+        gap: 20px;
+    }
 }

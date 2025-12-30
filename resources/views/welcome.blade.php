@@ -30,6 +30,12 @@
             
             const stickerCount = 18; 
             const spawnInterval = 1800;
+
+            const initialWidth = window.innerWidth;
+            const isMobile = initialWidth <= 600;
+    
+            const spreadX = isMobile ? 180 : 350;
+            const spreadY = isMobile ? 120 : 250;
             
             for (let i = 0; i < stickerCount; i++) {
                 setTimeout(() => {
@@ -42,8 +48,8 @@
                 img.src = stickerSrc;
                 img.classList.add('sticker');
 
-                const randomX = (Math.random() - 0.5) * 350; 
-                const randomY = (Math.random() - 0.5) * 250;  
+                const randomX = (Math.random() - 0.5) * spreadX; 
+                const randomY = (Math.random() - 0.5) * spreadY;  
                 let rotation = (Math.random() - 0.5) * 60; 
                 if (Math.random() > 0.8) {
                     rotation += 180;
