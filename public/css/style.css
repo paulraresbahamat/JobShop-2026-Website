@@ -1,0 +1,146 @@
+:root{
+    --dirty-angel: #dbdada;
+    --standard: var(--color-blue-transparent-equivalent);
+    --ocuppied: #E58F9A;
+    --selected: #0125DC;
+    --radius: 3px;
+    
+    --color-blue-transparent-equivalent: #6779d0;
+    --color-blue-transparent: #324dd9;
+    --color-blue: #9DAAD2;
+
+    --color-gray: #333333;
+    --color-white: #FFFFFF;
+    
+    --color-orange: #FF4D20; 
+}
+
+body{
+    font-family: 'Inter';
+    scroll-behavior: smooth;
+    background-color: var(--color-white);
+    background-image: url('/images/grid-team-1.svg');
+    background-position: 60% 25%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.js-logo {
+    all: unset;
+
+    display: flex;
+    margin-left: 20px;
+    height: 60px;
+
+    align-items: center;
+}
+
+.js-logo img {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.js-logo h1 {
+    width: max-content;
+    color: var(--color-white);
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: 100;
+
+    align-self: flex-end;
+    margin-bottom: -6px;
+}
+
+.js-logo a:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+@media screen AND (max-width: 500px) {
+    
+    .js-logo {
+
+        margin-left: 10px;
+        height: 55px;
+    }
+}
+
+@media screen AND (max-width: 450px) {
+    
+    .js-logo {
+
+        margin-left: 5px;
+        height: 50px;
+    }
+    .js-logo h1 {
+
+        font-size: 1.8rem;
+    }
+}
+
+.text-crazy-blue{
+    color: var(--color-gray);
+}
+
+.log-button, .custom-button, .unselect-button{
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    font-weight: 500;
+}
+  
+.log-button:hover, .custom-button:hover, .close-button{
+    color: var(--color-white);
+    background-color: var(--color-blue-transparent-equivalent);
+}
+  
+.unselect-button:hover{
+    background-color: var(--dirty-angel);
+    color: var(--color-blue-transparent-equivalent);
+}
+
+.close-button:hover{
+    background-color: var(--color-blue);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-gray);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+.navbar-brand .logo {
+    height: 50px;
+}
+
+#navbarSupportedContent{
+    flex-grow: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../images/menu_icon.png");
+    filter: invert();
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: -0.5rem;
+    }
+}
+
+nav .container-fluid{
+    --bs-gutter-x: 0px;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
