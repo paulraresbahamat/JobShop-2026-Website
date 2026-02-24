@@ -16,7 +16,7 @@ return [
     'partners' => 'Strategic<br>Partners',
     'editions' => 'Celebrating<br>32 editions',
     'about-hts' => 'Moreover, if you want to discover the world of entrepreneurship and learn how to build your own business,
-                 <span class="highlight-orange">“How to Start-Up”</span> is the perfect event for you!<br>On March 27th, 
+                 <span class="highlight-orange">“How to Start-Up”</span> is the perfect event for you!<br>On March 10th (at 4:00 P.M.), 
                  you\'ll have the chance to attend a motivational conference alongside successful entrepreneurs 
                  who will share their experiences and the essential steps to launching a business.<br><br>Come 
                  explore the opportunities within the start-up world and learn how to turn an idea into a thriving 

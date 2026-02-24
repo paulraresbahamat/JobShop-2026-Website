@@ -18,7 +18,7 @@ return [
     'about-hts' => 'Mai mult de atât, dacă vrei să descoperi lumea antreprenoriatului 
     și să înveți cum să îți construiești propria afacere, 
     <span class="highlight-orange">“How to Start-Up”</span> este 
-    evenimentul perfect pentru tine!<br>Pe 27 martie vei avea ocazia să participi la o 
+    evenimentul perfect pentru tine!<br>Pe 10 martie (la ora 16:00) vei avea ocazia să participi la o 
     conferință motivațională alături de antreprenori de succes, care își vor împărtăși experiențele 
     și pașii esențiali pentru lansarea unei afaceri.',
     'loc' => 'BT ARENA | 9-10 Martie'
