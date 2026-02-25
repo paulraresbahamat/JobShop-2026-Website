@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'company_id' => 'msg',
-            'name' => 'Frequentis',
+            'name' => 'msg',
             'email' => 'john2@example.com',
             'password' => bcrypt('QMbT8ysxXMHY')
         ]);
