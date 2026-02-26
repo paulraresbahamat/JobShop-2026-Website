@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Stand;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,7 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        for ($i = 1; $i <= 10; $i++) {
+            Stand::create([
+                'number' => $i,
+                'user_id' => null,
+                'company_name' => null,
+            ]);
+        }
 
         User::factory()->create([
             'company_id' => 'CID-TEST',
