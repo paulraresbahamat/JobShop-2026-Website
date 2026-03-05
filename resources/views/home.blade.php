@@ -6,5 +6,4 @@
     <x-hero />
     <x-about />
     <x-footer />
-    <!-- Your home page content will go here -->
 @endsection

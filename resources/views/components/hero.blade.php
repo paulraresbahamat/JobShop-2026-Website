@@ -28,6 +28,13 @@
                 <div class="logo-item logo7"></div>
                 <div class="logo-item logo8"></div>
                 <div class="logo-item logo9"></div>
+                <div class="logo-item logo10"></div>
+                <div class="logo-item logo11"></div>
+                <div class="logo-item logo12"></div>
+                <div class="logo-item logo13"></div>
+                <div class="logo-item logo14"></div>
+                <div class="logo-item logo15"></div>
+                <div class="logo-item logo16"></div>
 
                 <div class="logo-item logo1"></div>
                 <div class="logo-item logo2"></div>
@@ -38,6 +45,13 @@
                 <div class="logo-item logo7"></div>
                 <div class="logo-item logo8"></div>
                 <div class="logo-item logo9"></div>
+                <div class="logo-item logo10"></div>
+                <div class="logo-item logo11"></div>
+                <div class="logo-item logo12"></div>
+                <div class="logo-item logo13"></div>
+                <div class="logo-item logo14"></div>
+                <div class="logo-item logo15"></div>
+                <div class="logo-item logo16"></div>
 
                 <div class="logo-item logo1"></div>
                 <div class="logo-item logo2"></div>
@@ -48,6 +62,13 @@
                 <div class="logo-item logo7"></div>
                 <div class="logo-item logo8"></div>
                 <div class="logo-item logo9"></div>
+                <div class="logo-item logo10"></div>
+                <div class="logo-item logo11"></div>
+                <div class="logo-item logo12"></div>
+                <div class="logo-item logo13"></div>
+                <div class="logo-item logo14"></div>
+                <div class="logo-item logo15"></div>
+                <div class="logo-item logo16"></div>
             </div>
         </div>
     </div>
@@ -222,7 +243,7 @@
         display: flex;
         gap: 40px; 
         width: max-content; 
-        animation: scroll 20s linear infinite;
+        animation: scroll 40s linear infinite;
     }
 
     .logo1 { background-image: url('{{ asset("images/marquee-logos/1.png") }}'); }
@@ -234,6 +255,13 @@
     .logo7 { background-image: url('{{ asset("images/marquee-logos/7.png") }}'); }
     .logo8 { background-image: url('{{ asset("images/marquee-logos/8.png") }}'); }
     .logo9 { background-image: url('{{ asset("images/marquee-logos/9.png") }}'); }
+    .logo10 { background-image: url('{{ asset("images/marquee-logos/10.png") }}'); }
+    .logo11 { background-image: url('{{ asset("images/marquee-logos/11.svg") }}'); }
+    .logo12 { background-image: url('{{ asset("images/marquee-logos/12.png") }}'); }
+    .logo13 { background-image: url('{{ asset("images/marquee-logos/13.png") }}'); }
+    .logo14 { background-image: url('{{ asset("images/marquee-logos/14.png") }}'); }
+    .logo15 { background-image: url('{{ asset("images/marquee-logos/15.svg") }}'); }
+    .logo16 { background-image: url('{{ asset("images/marquee-logos/16.png") }}'); }
 
     @keyframes scroll {
         0% {

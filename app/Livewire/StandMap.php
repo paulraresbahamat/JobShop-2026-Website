@@ -25,6 +25,11 @@ class StandMap extends Component
 
         $stand = Stand::where('number', $number)->first();
         
+        if (!$stand) {
+            session()->flash('error', 'Stand not found!');
+            return;
+        }
+        
         if ($stand->user_id) {
             if ($stand->user_id == $user->id) {
                 $stand->update(['user_id' => null, 'company_name' => null]);

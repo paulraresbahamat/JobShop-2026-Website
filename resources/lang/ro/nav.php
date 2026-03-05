@@ -7,5 +7,6 @@ return [
     'job' => 'Oportunități de carieră',
     'startup' => 'How to Start-Up',
     'catalogue' => 'Catalog',
-    'team' => 'Echipă'
+    'team' => 'Echipă',
+    'jobs' => 'Oportunități de carieră'
 ];

@@ -9,8 +9,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/job-opportunities', function () {
-    return view('opportunities');
-})->name('opportunities');
+    return view('jobs-page');
+})->name('jobs');
 
 Route::get('/catalogue', function () {
     return view('catalogue-page');

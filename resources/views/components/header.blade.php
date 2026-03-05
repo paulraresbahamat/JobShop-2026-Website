@@ -12,7 +12,7 @@
             
             <a href="{{ route('home') }}#about" class="nav-link">{{ __('nav.about') }}</a>
             <a href="{{ route('home') }}#how-to-start-up" class="nav-link">{{ __('nav.startup') }}</a>
-            
+            <a href="{{ route('jobs') }}" class="nav-link {{ request()->routeIs('jobs') ? 'active' : '' }}">{{ __('nav.jobs') }}</a>
             <a href="{{ route('catalogue') }}" class="nav-link {{ request()->routeIs('catalogue') ? 'active' : '' }}">{{ __('nav.catalogue') }}</a>
             <a href="{{ route('team') }}" class="nav-link {{ request()->routeIs('team') ? 'active' : '' }}">{{ __('nav.team') }}</a>
         </nav>
@@ -51,6 +51,7 @@
         <a href="{{ route('home') }}" class="mobile-nav-link">{{ __('nav.home') }}</a>
         <a href="{{ route('home') }}#about" class="mobile-nav-link">{{ __('nav.about') }}</a>
         <a href="{{ route('home') }}#how-to-start-up" class="mobile-nav-link">{{ __('nav.startup') }}</a>
+        <a href="{{ route('jobs') }}" class="mobile-nav-link">{{ __('nav.jobs') }}</a>
         <a href="{{ route('catalogue') }}" class="mobile-nav-link">{{ __('nav.catalogue') }}</a>
         <a href="{{ route('team') }}" class="mobile-nav-link">{{ __('nav.team') }}</a>
 

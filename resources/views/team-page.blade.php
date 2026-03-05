@@ -5,5 +5,4 @@
 @section('content')
     <x-team />
     <x-footer />
-    <!-- Your home page content will go here -->
 @endsection

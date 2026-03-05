@@ -5,5 +5,4 @@
 @section('content')
     <x-catalogue />
     <x-footer />
-    <!-- Your home page content will go here -->
 @endsection

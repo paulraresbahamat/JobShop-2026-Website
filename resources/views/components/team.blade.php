@@ -4,19 +4,19 @@
         <div class="team-grid">
             @php
                 $members = [
-                    ['name' => 'Dragoș Rotea', 'role' => __('team.project_coordinator'), 'linkedin' => 'https://www.linkedin.com/in/dragos-rotea-8aaaa1366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'],
-                    ['name' => 'Ioan-Alexandru Petringel', 'role' => __('team.hr_responsible'), 'linkedin' => 'https://www.linkedin.com/in/alex-petringel/'],
-                    ['name' => 'Anca-Ștefania Cuibar', 'role' => __('team.fundraising_responsible'), 'linkedin' => 'https://www.linkedin.com/in/cuibar-anca-472aa1359?utm_source=share_via&utm_content=profile&utm_medium=member_android'],
-                    ['name' => 'Larisa Radu', 'role' => __('team.corporate_relations'), 'linkedin' => 'https://www.linkedin.com/in/larisa-radu-2a0b38371?utm_source=share_via&utm_content=profile&utm_medium=member_android'],
-                    ['name' => 'Andreea-Octavia-Patricia Szegedi-Hozai', 'role' => __('team.pr_responsible'), 'linkedin' => 'https://www.linkedin.com/in/andreea-octavia-patricia-szegedi-hozai-8bba743a7?utm_source=share_via&utm_content=profile&utm_medium=member_ios'],
-                    ['name' => 'Claudia-Teodora Chira', 'role' => __('team.media_responsible'), 'linkedin' => 'https://www.linkedin.com/in/claudia-teodora-chira-6ab8a5388?utm_source=share_via&utm_content=profile&utm_medium=member_ios'],
-                    ['name' => 'Paul-Rareș Bahamat', 'role' => __('team.it_responsible'), 'linkedin' => 'https://www.linkedin.com/in/paul-rare%C8%99-bahamat-0a37733a0/'],
-                    ['name' => 'Luiza-Maria Furdui', 'role' => __('team.design_responsible'), 'linkedin' => 'https://www.linkedin.com/in/furdui-luiza/'],
-                    ['name' => 'Matei Șandor', 'role' => __('team.junior_designer'), 'linkedin' => 'https://www.linkedin.com/in/matei-sandor-a713933b0?utm_source=share_via&utm_content=profile&utm_medium=member_ios'],
-                    ['name' => 'Sara Ioana Drăgănuță', 'role' => __('team.hts_coordinator'), 'linkedin' => 'https://www.linkedin.com/in/sara-draganuta-3ab723350/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'],
-                    ['name' => 'Andrea Larisa Marița', 'role' => __('team.hts_design'), 'linkedin' => 'https://www.linkedin.com/in/larisa-radu-2a0b38371?utm_source=share_via&utm_content=profile&utm_medium=member_android'],
-                    ['name' => 'Alesia Breban', 'role' => __('team.hts_pr'), 'linkedin' => 'https://www.linkedin.com/in/alesia-breban-a279213b0?utm_source=share_via&utm_content=profile&utm_medium=member_ios'],
-                    ['name' => 'Vlad-Costin Iftimie', 'role' => __('team.logistics_responsible'), 'linkedin' => 'https://www.linkedin.com/in/vlad-iftimie-905241251?utm_source=share_via&utm_content=profile&utm_medium=member_ios'],
+                    ['name' => 'Dragoș Rotea', 'role' => __('team.project_coordinator'), 'linkedin' => 'https://www.linkedin.com/in/dragos-rotea-8aaaa1366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', 'photo' => 'images/team/Dragos.png'],
+                    ['name' => 'Ioan-Alexandru Petringel', 'role' => __('team.hr_responsible'), 'linkedin' => 'https://www.linkedin.com/in/alex-petringel/', 'photo' => 'images/team/Alex.png'],
+                    ['name' => 'Anca-Ștefania Cuibar', 'role' => __('team.fundraising_responsible'), 'linkedin' => 'https://www.linkedin.com/in/cuibar-anca-472aa1359?utm_source=share_via&utm_content=profile&utm_medium=member_android', 'photo' => 'images/team/Anca.png'],
+                    ['name' => 'Larisa Radu', 'role' => __('team.corporate_relations'), 'linkedin' => 'https://www.linkedin.com/in/larisa-radu-2a0b38371?utm_source=share_via&utm_content=profile&utm_medium=member_android', 'photo' => 'images/team/Larisa Radu.png'],
+                    ['name' => 'Andreea-Octavia-Patricia<br>Szegedi-Hozai', 'role' => __('team.pr_responsible'), 'linkedin' => 'https://www.linkedin.com/in/andreea-octavia-patricia-szegedi-hozai-8bba743a7?utm_source=share_via&utm_content=profile&utm_medium=member_ios', 'photo' => 'images/team/Patri.png'],
+                    ['name' => 'Claudia-Teodora Chira', 'role' => __('team.media_responsible'), 'linkedin' => 'https://www.linkedin.com/in/claudia-teodora-chira-6ab8a5388?utm_source=share_via&utm_content=profile&utm_medium=member_ios', 'photo' => 'images/team/Jazz.png'],
+                    ['name' => 'Paul-Rareș Bahamat', 'role' => __('team.it_responsible'), 'linkedin' => 'https://www.linkedin.com/in/paul-rare%C8%99-bahamat-0a37733a0/', 'photo' => 'images/team/Rares.jpeg'],
+                    ['name' => 'Luiza-Maria Furdui', 'role' => __('team.design_responsible'), 'linkedin' => 'https://www.linkedin.com/in/furdui-luiza/', 'photo' => 'images/team/Luiza.png'],
+                    ['name' => 'Matei Șandor', 'role' => __('team.junior_designer'), 'linkedin' => 'https://www.linkedin.com/in/matei-sandor-a713933b0?utm_source=share_via&utm_content=profile&utm_medium=member_ios', 'photo' => 'images/team/Matei.png'],
+                    ['name' => 'Sara Ioana Drăgănuță', 'role' => __('team.hts_coordinator'), 'linkedin' => 'https://www.linkedin.com/in/sara-draganuta-3ab723350/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', 'photo' => 'images/team/Sara.png'],
+                    ['name' => 'Andrea Larisa Marița', 'role' => __('team.hts_design'), 'linkedin' => 'https://www.linkedin.com/in/larisa-radu-2a0b38371?utm_source=share_via&utm_content=profile&utm_medium=member_android', 'photo' => 'images/team/Larisa Marita.png'],
+                    ['name' => 'Alesia Breban', 'role' => __('team.hts_pr'), 'linkedin' => 'https://www.linkedin.com/in/alesia-breban-a279213b0?utm_source=share_via&utm_content=profile&utm_medium=member_ios', 'photo' => 'images/team/Ale.png'],
+                    ['name' => 'Vlad-Costin Iftimie', 'role' => __('team.logistics_responsible'), 'linkedin' => 'https://www.linkedin.com/in/vlad-iftimie-905241251?utm_source=share_via&utm_content=profile&utm_medium=member_ios', 'photo' => 'images/team/Vlad.png'],
                 ];
             @endphp
 
@@ -24,12 +24,12 @@
                 <div class="member-row">
                     <div class="photo-frame">
                         <div class="inner-frame">
-                            <img src="{{ asset('images/placeholder-teampic.svg') }}" alt="Team member">
+                            <img src="{{ asset($member['photo']) }}" alt="{{ $member['name'] }}">
                         </div>
                     </div>
 
                     <div class="member-details">
-                        <h3>{{ $member['name'] }}</h3>
+                        <h3>{!! $member['name'] !!}</h3>
                         <p class="role">{{ $member['role'] }}</p>
                         @if($member['linkedin'])
                             <a href="{{ $member['linkedin'] }}" 
@@ -49,7 +49,12 @@
 <style>
     .container {
         margin: 0 auto;
-        padding: 0 15px;  
+        padding: 0 15px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .team-section {
@@ -62,12 +67,12 @@
     }
 
     .team-title {
+        font-family: 'Inter', sans-serif;
         position: relative;
         width: 100%;
         text-align: center;
         font-size: 36px;
         font-weight: 500;
-        font-style: medium;
         margin-bottom: 60px;
     }
     
@@ -105,9 +110,10 @@
         height: 175px;
         border: 1px solid #e0e0e0;
         border-radius: 12px;
-        padding: 5px;
+        padding: 6px;
         background: #fff;
         box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        overflow: hidden; /* ensures nothing leaks outside */
     }
 
     .inner-frame {
@@ -115,6 +121,14 @@
         height: 100%;
         background-color: #fcfcfc;
         border-radius: 8px;
+        overflow: hidden; 
+    }
+
+    .inner-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .member-details h3 {
@@ -183,6 +197,32 @@
     .linkedin-text:hover {
         color: #0125DC; 
         text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+
+        .member-row {
+            max-width: 750px;
+            gap: 35px;
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 240px;
+        }
+
+        .member-details h3 {
+            font-size: 26px;
+        }
+
+        .member-details .role {
+            font-size: 18px;
+        }
+
+        .linkedin-text {
+            font-size: 16px;
+        }
+
     }
 
     @media (max-width: 768px) {

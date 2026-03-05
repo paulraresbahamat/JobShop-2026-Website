@@ -8,4 +8,5 @@ return [
     'startup' => 'How to Start-Up',
     'catalogue' => 'Catalogue',
     'team' => 'Team',
+    'jobs' => 'Job Opportunities'
 ];
