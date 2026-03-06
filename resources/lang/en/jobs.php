@@ -24,9 +24,7 @@ STS încurajează inovarea tehnologică și susține implementarea celor mai sig
 
 Echipa .msg România e formată din oameni faini, care trăiesc și respiră tehnologie, mereu cu gândul la soluții smart pentru provocările digitale de azi și de mâine.
 
-<br><br>Credem în creșterea și susținerea tinerilor talentați - de aceea, #msgEducates nu e doar un hashtag, ci o adevărată platformă cu super-programe dedicate studenților care vor să-și înceapă cariera.
-
-<br><br>Mai multe despre noi te așteaptă pe site-ul nostru: https://www.msg-systems.ro/ro/-msg-Romania/despre-noi",
+<br><br>Credem în creșterea și susținerea tinerilor talentați - de aceea, #msgEducates nu e doar un hashtag, ci o adevărată platformă cu super-programe dedicate studenților care vor să-și înceapă cariera.",
     
     'lih' => "Suntem Life is Hard, o companie de software specializată în digitalizarea IMM-urilor și soluții tehnologice de top. Din 2007, suntem principalul furnizor de soluții IT pentru piața românească de brokeraj de asigurări.
 
@@ -59,6 +57,29 @@ Echipa .msg România e formată din oameni faini, care trăiesc și respiră teh
 <br><br>Visit us at JobShop® and discover how we connect the physical and digital worlds to spark breakthrough innovation.
 
 <br><br>Explore our environment, meet our team, and discover the career opportunities that could define your future.",
+    'seeus' => "SEE US este agenția care te însoțește în călătoria vieții tale, oferindu-ți o experiență autentică și unică prin programe de schimb cultural Work & Travel, Internships și Camp în Statele Unite și Europa, etc. Cu pasiune și profesionalism, suntem aici să te sprijinim la fiecare pas, transformând visul de a lucra și călători într-o țară nouă într-o experiență unică, fără bătăi de cap. <br><br>
+
+Echipa noastră dedicată este alături de tine încă din prima etapă - te ajutăm să găsești programul potrivit și jobul perfect, îți pregătim documentele și îți oferim suport pe durata programelor. La SEE US, ne mândrim că nu ești doar un participant, ci faci parte din familia noastră. Siguranța și fericirea ta sunt prioritățile noastre, iar fiecare detaliu contează pentru noi.<br><br>
+
+Pe lângă munca și câștigurile financiare, vei descoperi cultura americană și internațională, vei cunoaște oameni din toate colțurile lumii și îți vei îmbunătăți abilitățile de comunicare în limba engleză. SEE US îți oferă mai mult decât o vară și o experiență de neuitat - îți oferim o șansă la dezvoltare personală și profesională, la crearea unor amintiri ce te vor însoți toată viața.<br><br>
+
+Suntem mai mult decât o agenție - suntem partenerul tău de drum, susținându-te să explorezi noi orizonturi și să te bucuri de o experiență care îți deschide uși pentru viitor.",
+    'holcim' => "Holcim România este unul dintre cei mai mari producători din domeniul materialelor de
+construcții din țară. Suntem prezenți în peste 50 de locații din România și facem parte dintr-un grup global cu
+impact real în modul în care se construiește lumea de azi și de mâine. <br><br>
+Scopul nostru este să construim pentru oameni și planetă. În Holcim vei face parte dintr-un grup
+de 2000 de oameni pasionați, inovatori și performanți. Echipele noastre se inspiră reciproc
+pentru a oferi cele mai inovatoare și durabile soluții de construcție pentru a accelera tranziția
+verde. <br><br>
+Domeniile în care activăm sunt variate și ofertante: ciment, betoane, agregate, BCA,
+prefabricate, infrastructură. Cu alte cuvinte, ai de unde alege!<br><br>
+Holcim România este certificată Top Employer România Top Employer Europa și Top Employer Global, o
+recunoaștere care confirmă angajamentul companiei de a construi o cultură organizațională
+solidă, bazată pe dezvoltarea oamenilor și crearea unui mediu de lucru sănătos și echilibrat.
+Această certificare reflectă modul în care Holcim pune oamenii în centrul strategiei sale,
+investind constant în dezvoltare profesională, leadership responsabil și colaborare, cu obiectivul
+de a construi o organizație sustenabilă, orientată spre performanță și creștere pe termen lung.",
     'nodesc' => "Descrierea acestei companii este încă în lucru.",
-    'title' => 'Job <span class="blue-text">Opportunities</span>'
+    'title' => 'Job <span class="blue-text">Opportunities</span>',
+    'spon' => 'Our <span class="orange-text">Sponsors</span>'
 ];

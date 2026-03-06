@@ -35,6 +35,7 @@
                 <div class="logo-item logo14"></div>
                 <div class="logo-item logo15"></div>
                 <div class="logo-item logo16"></div>
+                <div class="logo-item logo17"></div>
 
                 <div class="logo-item logo1"></div>
                 <div class="logo-item logo2"></div>
@@ -52,6 +53,7 @@
                 <div class="logo-item logo14"></div>
                 <div class="logo-item logo15"></div>
                 <div class="logo-item logo16"></div>
+                <div class="logo-item logo17"></div>
 
                 <div class="logo-item logo1"></div>
                 <div class="logo-item logo2"></div>
@@ -69,6 +71,7 @@
                 <div class="logo-item logo14"></div>
                 <div class="logo-item logo15"></div>
                 <div class="logo-item logo16"></div>
+                <div class="logo-item logo17"></div>
             </div>
         </div>
     </div>
@@ -256,12 +259,13 @@
     .logo8 { background-image: url('{{ asset("images/marquee-logos/8.png") }}'); }
     .logo9 { background-image: url('{{ asset("images/marquee-logos/9.png") }}'); }
     .logo10 { background-image: url('{{ asset("images/marquee-logos/10.png") }}'); }
-    .logo11 { background-image: url('{{ asset("images/marquee-logos/11.svg") }}'); }
+    .logo11 { background-image: url('{{ asset("images/marquee-logos/11.png") }}');}
     .logo12 { background-image: url('{{ asset("images/marquee-logos/12.png") }}'); }
     .logo13 { background-image: url('{{ asset("images/marquee-logos/13.png") }}'); }
     .logo14 { background-image: url('{{ asset("images/marquee-logos/14.png") }}'); }
     .logo15 { background-image: url('{{ asset("images/marquee-logos/15.svg") }}'); }
     .logo16 { background-image: url('{{ asset("images/marquee-logos/16.png") }}'); }
+    .logo17 { background-image: url('{{ asset("images/marquee-logos/17.png") }}'); }
 
     @keyframes scroll {
         0% {
@@ -280,6 +284,10 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .logo-item.logo11 {
+        width: 240px;
     }
 
     @media (max-width: 1024px) {
@@ -308,6 +316,7 @@
 
         .logo-track { gap: 30px; }
         .logo-item { width: 80px; height: 80px; }
+        .logo-item.logo11 { width: 104px; height: 104px; }
     }
 
     @media (max-width: 850px) {
@@ -362,6 +371,11 @@
         .logo-item{
             height: 80px;
             width: 80px;
+        }
+
+        .logo-item.logo11 {
+            height: 100px;
+            width: 100px;
         }
 
         .shape { display: none !important; }

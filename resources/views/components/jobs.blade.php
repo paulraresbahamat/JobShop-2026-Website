@@ -1,16 +1,16 @@
 @php
     $companies = [
-        1  => ['name' => '.msg', 'description' => __('jobs.msg')],
-        2  => ['name' => 'Automatify', 'description' => __('jobs.auto')],
-        3  => ['name' => 'Holcim', 'description' => __('jobs.nodesc')],
-        4  => ['name' => 'Analog Devices', 'description' => __('jobs.analog')],
-        5  => ['name' => 'Frequentis', 'description' => __('jobs.freq')],
-        6  => ['name' => 'RebelDot', 'description' => __('jobs.rd')],
-        7  => ['name' => 'Uncountable', 'description' => __('jobs.unc')],
-        8  => ['name' => 'BMW TechWorks', 'description' => __('jobs.nodesc')],
-        9  => ['name' => 'Serviciul de Telecomunicații Speciale', 'description' => __('jobs.sts')],
-        10 => ['name' => 'Life Is Hard', 'description' => __('jobs.lih')],
-        11 => ['name' => 'See US Work and Travel', 'description' => __('jobs.nodesc')],
+        1  => ['name' => '.msg', 'description' => __('jobs.msg'), 'address' => 'msg systems croitorilor, Cluj-Napoca'],
+        2  => ['name' => 'Automatify', 'description' => __('jobs.auto'), 'address' => 'Automatify IT Henri Barbusse, Cluj-Napoca'],
+        3  => ['name' => 'Holcim', 'description' => __('jobs.holcim'), 'address' => 'Holcim Romania Alesd'],
+        4  => ['name' => 'Analog Devices', 'description' => __('jobs.analog'), 'address' => 'Analog Devices - Cluj-Napoca'],
+        5  => ['name' => 'Frequentis', 'description' => __('jobs.freq'), 'address' => 'Frequentis Henri Barbusse, Cluj-Napoca'],
+        6  => ['name' => 'RebelDot', 'description' => __('jobs.rd'), 'address' => 'RebelDot Strada Buftea, Cluj-Napoca'],
+        7  => ['name' => 'Uncountable', 'description' => __('jobs.unc'), 'address' => 'Uncountable Brannan Street, San Francisco'],
+        8  => ['name' => 'BMW TechWorks', 'description' => __('jobs.nodesc'), 'address' => 'BMW TechWorks Romania Strada Ploiesti, Cluj-Napoca'],
+        9  => ['name' => 'Serviciul de Telecomunicații Speciale', 'description' => __('jobs.sts'), 'address' => 'Serviciul de Telecomunicații Speciale Splaiul Independentei, Bucuresti'],
+        10 => ['name' => 'Life Is Hard', 'description' => __('jobs.lih'), 'address' => 'Life is Hard - Floresti'],
+        11 => ['name' => 'See US Work and Travel', 'description' => __('jobs.seeus'), 'address' => 'See us work and travel Calea Motilor, Cluj-Napoca'],
     ];
 @endphp
 
@@ -63,7 +63,7 @@
 
             <div class="company-item" data-company="8">
                 <div class="company-logo">
-                    <img src="{{ asset('images/marquee-logos/11.svg') }}" alt="BMW">
+                    <img src="{{ asset('images/marquee-logos/11.png') }}" alt="BMW">
                 </div>
             </div>
 
@@ -85,6 +85,44 @@
                 </div>
             </div>
         </div>
+        <h2 class="sponsors-title">{!! __('jobs.spon') !!}</h2>
+        <div class="sponsors-grid">
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/12.png') }}" alt="Olivo Coffee Culture">
+                </div>
+            </div>
+
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/13.png') }}" alt="Lunchbox">
+                </div>
+            </div>
+
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/14.png') }}" alt="Alikof">
+                </div>
+            </div>
+
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/15.svg') }}" alt="Popeyes">
+                </div>
+            </div>
+
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/16.png') }}" alt="Indigo">
+                </div>
+            </div>
+
+            <div class="sponsor-item">
+                <div class="sponsor-logo">
+                    <img src="{{ asset('images/marquee-logos/17.png') }}" alt="Digital Romania">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="modal" id="companyModal">
         <div class="modal-overlay"></div>
@@ -93,14 +131,57 @@
             <div class="modal-body">
                 <h2 class="modal-title" id="modalTitle">Company Name</h2>
                 <p class="modal-description" id="modalDescription">Company description goes here.</p>
+
+                <a href="#" target="_blank" id="modalMapLink" class="modal-map-link" style="display: none;">
+                    <div class="modal-map-container">
+                        <iframe id="modalMap" width="100%" height="250" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
 <style>
+    .modal-map-link {
+        display: block;
+        margin-top: 24px;
+        text-decoration: none;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid #e5e5e5;
+        transition: border-color 0.3s ease;
+        position: relative;
+    }
+
+    .modal-map-link:hover {
+        border-color: #0125DC;
+    }
+
+    .modal-map-container {
+        width: 100%;
+        height: 250px;
+        pointer-events: none;
+    }
+
+    .modal-map-link::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        z-index: 10;
+        cursor: pointer;
+    }
+
     .blue-text{
         color: #0125DC;
+    }
+
+    .orange-text{
+        color: #FF4D20;
     }
 
     .jobs-section {
@@ -224,6 +305,49 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .sponsors-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        color: #000;
+        margin: 70px 0 30px 0;
+        text-align: center;
+    }
+
+    .sponsors-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+        justify-content: center;
+    }
+
+    .sponsor-item {
+        background: #ffffff;
+        border: 2px solid #e5e5e5;
+        border-radius: 20px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+    }
+
+    .sponsor-logo {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sponsor-logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
     }
 
     @keyframes fadeIn {
@@ -378,6 +502,10 @@
         const modalOverlay = document.querySelector('.modal-overlay');
         const companyItems = document.querySelectorAll('.company-item');
 
+        // Map Elements
+        const modalMapLink = document.getElementById('modalMapLink');
+        const modalMap = document.getElementById('modalMap');
+
         // Open modal
         companyItems.forEach(item => {
             item.addEventListener('click', () => {
@@ -386,6 +514,23 @@
                 
                 modalTitle.textContent = company.name;
                 modalDescription.innerHTML = company.description;
+
+                // Map logic
+                if (company.address) {
+                    const encodedAddress = encodeURIComponent(company.address);
+                    
+                    // iframe embed link
+                    modalMap.src = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+                    
+                    // Direct Google Maps redirect link
+                    modalMapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+                    modalMapLink.style.display = 'block';
+                } else {
+                    // Hide map if no address exists for the company
+                    modalMapLink.style.display = 'none';
+                    modalMap.src = '';
+                }
+
                 modal.classList.add('active');
             });
         });
@@ -393,6 +538,9 @@
         // Close modal
         const closeModal = () => {
             modal.classList.remove('active');
+
+            // clear iframe to reduce load on the page
+            setTimeout(() => { modalMap.src = ''; }, 300);
         };
 
         modalClose.addEventListener('click', closeModal);
