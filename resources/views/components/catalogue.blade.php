@@ -145,7 +145,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc =
             'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-        const url = "{{ asset('CatalogueMaybe.pdf') }}";
+        const url = "{{ asset('CatalogFinalVer.pdf') }}";
 
         let pdfDoc           = null,
             pageNum          = 1,
@@ -166,18 +166,29 @@
                 const containerWidth = renderContainer.clientWidth;
                 const scale          = containerWidth / naturalViewport.width;
                 const viewport       = page.getViewport({ scale });
-                canvas.width  = viewport.width;
-                canvas.height = viewport.height;
-                pageWrapper.style.width  = `${containerWidth}px`;
-                pageWrapper.style.height = `${(containerWidth / viewport.width) * viewport.height}px`;
-                page.render({ canvasContext: ctx, viewport }).promise.then(() => {
+                const outputScale    = window.devicePixelRatio || 1;
+
+                // Render at device pixel ratio for crisp output on high-density mobile screens.
+                canvas.width  = Math.floor(viewport.width * outputScale);
+                canvas.height = Math.floor(viewport.height * outputScale);
+                canvas.style.width  = `${viewport.width}px`;
+                canvas.style.height = `${viewport.height}px`;
+
+                pageWrapper.style.width  = `${viewport.width}px`;
+                pageWrapper.style.height = `${viewport.height}px`;
+
+                page.render({
+                    canvasContext: ctx,
+                    viewport,
+                    transform: outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null
+                }).promise.then(() => {
                     pageIsRendering = false;
                     if (pageNumIsPending !== null) {
                         renderPage(pageNumIsPending);
                         pageNumIsPending = null;
                     }
                 });
-                const cssScale = containerWidth / viewport.width;
+                const cssScale = 1;
 
                 page.getAnnotations().then(annotations => {
                     annotationLayer.innerHTML = '';
