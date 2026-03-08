@@ -81,5 +81,12 @@ investind constant în dezvoltare profesională, leadership responsabil și cola
 de a construi o organizație sustenabilă, orientată spre performanță și creștere pe termen lung.",
     'nodesc' => "Descrierea acestei companii este încă în lucru.",
     'title' => 'Job <span class="blue-text">Opportunities</span>',
-    'spon' => 'Our <span class="orange-text">Sponsors</span>'
+    'spon' => 'Our <span class="orange-text">Sponsors</span>',
+    'bmw' => "Located in Cluj, in the heart of Transylvania, BMW TechWorks Romania serves as the new European IT hub of BMW, established through a strategic joint venture between BMW Group and NTT DATA Romania. This innovative hub is dedicated to developing advanced software solutions across various domains, including human resources, production, development, sales, and BMW Group Financial Services.<br><br>
+
+The longstanding and robust partnership between BMW Group and NTT DATA Romania highlights the strong potential and promise of this venture. Poised to become the driving force behind BMW's technological advancements, BMW TechWorks Romania harnesses the power of digital innovation to revolutionize the automotive industry. Our focus on cutting-edge software development paves the way for smarter, more efficient, and more connected automotive solutions.<br><br>
+
+Starting with an initial team of 120 highly skilled software developers, BMW TechWorks Romania has grown rapidly to bring together over 500 talented professionals by the end of 2025. With continued expansion ahead, we plan to surpass 750 team members in 2026, strengthening our role as a key contributor to BMW's global digital transformation.<br><br>
+
+Join us at BMW TechWorks Romania, where we are driving the future of automotive technology today."
 ];
